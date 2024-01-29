@@ -1,3 +1,4 @@
+import css from "../Options/Options.module.css";
 export const Options = ({
   handleClickOnButtons,
   totalFeedback,
@@ -6,14 +7,26 @@ export const Options = ({
   return (
     <>
       {" "}
-      <div>
-        <button onClick={handleClickOnButtons} type="button">
+      <div className={css.buttonsContainer}>
+        <button
+          className={css.button}
+          onClick={handleClickOnButtons}
+          type="button"
+        >
           Good
         </button>
-        <button onClick={handleClickOnButtons} type="button">
+        <button
+          className={css.button}
+          onClick={handleClickOnButtons}
+          type="button"
+        >
           Neutral
         </button>
-        <button onClick={handleClickOnButtons} type="button">
+        <button
+          className={css.button}
+          onClick={handleClickOnButtons}
+          type="button"
+        >
           Bad
         </button>
         {totalFeedback > 0 && (

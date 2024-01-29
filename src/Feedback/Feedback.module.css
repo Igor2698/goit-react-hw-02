@@ -1,0 +1,45 @@
+.feedbackContainer {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "good neutral bad"
+    "positive positive positive";
+  gap: 15px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.good,
+.neutral,
+.bad,
+.positive {
+  font-size: 22px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  width: 100px;
+  box-sizing: border-box;
+  white-space: normal;
+}
+
+.good {
+  grid-area: good;
+  background-color: #2ecc71;
+}
+
+.positive {
+  grid-area: positive;
+  background-color: aqua;
+}
+
+.neutral {
+  grid-area: neutral;
+  background-color: #f39c12;
+  
+}
+
+.bad {
+  grid-area: bad;
+  background-color: #e74c3c;
+}
