@@ -22,9 +22,7 @@ function App() {
   const { good, neutral, bad } = reviews;
   const totalFeedback = good + neutral + bad;
 
-  const handleClickOnButtons = (ev) => {
-    const buttonType = ev.target.textContent.toLowerCase();
-
+  const handleClickOnButtons = (buttonType) => {
     setReviews({ ...reviews, [buttonType]: reviews[buttonType] + 1 });
   };
 

@@ -10,21 +10,21 @@ export const Options = ({
       <div className={css.buttonsContainer}>
         <button
           className={css.button}
-          onClick={handleClickOnButtons}
+          onClick={() => handleClickOnButtons("good")}
           type="button"
         >
           Good
         </button>
         <button
           className={css.button}
-          onClick={handleClickOnButtons}
+          onClick={() => handleClickOnButtons("neutral")}
           type="button"
         >
           Neutral
         </button>
         <button
           className={css.button}
-          onClick={handleClickOnButtons}
+          onClick={() => handleClickOnButtons("bad")}
           type="button"
         >
           Bad
